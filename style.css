@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    overflow: auto;
+    scrollbar-width: none;
+    background: #000;
+    font-family: "Prompt", serif;
+}
+
+
+.title {
+    justify-items: topbar center;
+    align-items: center;
+    padding: 10px;
+    display: inline-flex;
+}
+
+.logolink{
+    height: 50px;
+    border-radius: 500px;
+}
+
+.logotitle {
+    color: white    ;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    font-weight: 700;
+    font-size: 20px;
+    user-select: none;
+}
+
+.topbar {
+    padding-left: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.information {
+    padding-left: 200px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+.information:hover {
+    color: red;
+}
+
+.socials {
+    padding-left: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+.socials:hover {
+    color: red;
+}
+
+.community {
+    padding-left: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+.community:hover {
+    color: red;
+}
+
+.directors {
+    padding-left: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+.directors:hover {
+    color: red;
+}
+
+.content {
+    padding-left: 20px;
+    color: white;
+    width: 1000px;
+    font-size: 25px;
+}
+
+.abtustext {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 600px;
+}
+
+.section1 {
+    padding: 30px;
+}
+
+.socialmedias {
+    padding: 20px;
+    color: white;
+}
+
+.yt_url {
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    transition: color 0.2s ease-in-out;
+    user-select: none;
+}
+
+.yt_url:hover {
+    color: red;
+}
+
+.community_url {
+    user-select: none;
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    transition: color 0.2s ease-in-out;
+}
+
+.community_url:hover {
+    color: red;
+}
+
+.communitytext {
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+}
+
+::selection {
+    background: red;
+}
+
+.directorstext {
+    font-size: 20px;
+    padding: 20px;
+    color: white;
+}
