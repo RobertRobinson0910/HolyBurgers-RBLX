@@ -1,23 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* GLOBAL RESETS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scrollbar-width: none;
-    background: #000;
     font-family: "Prompt", sans-serif;
+    background: #000;
     color: white;
 }
 
-/* Header Section */
-.title {
+body {
+    background: #000;
+}
+
+/* LOGO + NAVIGATION HEADER */
+.header {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 10px 20px;
     justify-content: space-between;
-    gap: 10px;
+    align-items: center;
+    padding: 15px 30px;
+    flex-wrap: wrap;
+    background: #000;
+}
+
+/* LOGO + TITLE GROUP */
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .logolink {
@@ -27,90 +39,102 @@
 
 .logotitle {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 22px;
     user-select: none;
+    color: white;
 }
 
-/* Top Navigation */
+/* NAVIGATION BAR */
 .topbar {
     display: flex;
+    gap: 25px;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
 }
 
 .topbar a {
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s ease-in-out;
+    color: white;
 }
 
 .topbar a:hover {
     color: red;
 }
 
-/* Specific Link Styling */
-.information, .socials, .community, .directors {
-    padding: 0 10px;
-}
-
-/* Content Styling */
-.content, .abtustext, .socialmedias, .communitytext, .directorstext {
+/* PAGE CONTENT */
+.content,
+.abtustext,
+.socialmedias,
+.communitytext,
+.directorstext {
     max-width: 1000px;
     padding: 20px;
     margin: auto;
     font-size: 20px;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
-.abtustext {
-    font-weight: 600;
+/* ABOUT US SECTIONS */
+.section1 h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 24px;
 }
 
-/* Links */
-.yt_url, .community_url {
+/* LINKS */
+.yt_url,
+.community_url {
     font-weight: 800;
     text-decoration: none;
     transition: color 0.2s ease-in-out;
+    color: white;
 }
 
-.yt_url:hover, .community_url:hover {
+.yt_url:hover,
+.community_url:hover {
     color: red;
 }
 
-/* Text Selection */
+/* TEXT SELECTION */
 ::selection {
     background: red;
+    color: white;
 }
 
-/* Responsive Design */
+/* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
-    .title {
+    .header {
         flex-direction: column;
         align-items: flex-start;
-    }
-
-    .logotitle {
-        font-size: 18px;
     }
 
     .topbar {
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
+        margin-top: 10px;
     }
 
-    .content, .abtustext, .socialmedias, .communitytext, .directorstext {
+    .logolink {
+        height: 40px;
+    }
+
+    .logotitle {
+        font-size: 18px;
+    }
+
+    .content,
+    .abtustext,
+    .socialmedias,
+    .communitytext,
+    .directorstext {
         padding: 15px;
         font-size: 18px;
     }
 
     .topbar a {
         font-size: 16px;
-    }
-
-    .logolink {
-        height: 40px;
     }
 }
 
@@ -119,7 +143,11 @@
         font-size: 16px;
     }
 
-    .content, .abtustext, .socialmedias, .communitytext, .directorstext {
+    .content,
+    .abtustext,
+    .socialmedias,
+    .communitytext,
+    .directorstext {
         font-size: 16px;
     }
 }
